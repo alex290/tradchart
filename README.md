@@ -1,5 +1,7 @@
 # График сайта TradingView
 
+[![](https://github.com/alex290/tradchart/blob/master/src/img/prev.png)](https://github.com/alex290/tradchart/blob/master/src/img/prev.png)
+
 ### Требования
 
 **[Node.js](https://nodejs.org/ "Node.js")**
