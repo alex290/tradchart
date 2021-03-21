@@ -9,8 +9,32 @@
 </head>
 
 <body>
+    <button type="button" class="btn btn-outline-info open_menu btn-sm" onclick="openMenu()"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button>
+    <button type="button" class="btn-close-white btn-close" onclick="closeMenu()"></button>
     <div class="bgmenu-page">
         <button type="button" class="btn-close-white btn-close" onclick="closeMenu()"></button>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 mb-3">
+                    <label for="widthColl" class="form-label text-white">Количество по ширине</label>
+                    <input type="number" min=1 class="form-control" id="widthColl" aria-describedby="emailHelp" value="1">
+                </div>
+                <div class="col-6 mb-3">
+                    <label for="heightColl" class="form-label text-white">Количество по высоте</label>
+                    <input type="number" min=1 class="form-control" id="heightColl" aria-describedby="emailHelp" value="1">
+                </div>
+                <div class="col-6 mb-3">
+                    <label for="theme" class="form-label text-white">Цвет графика</label>
+                    <select class="form-select" aria-label="Default select example" id="theme">
+                        <option value="dark">Темная</option>
+                        <option value="light">Светлая</option>
+                    </select>
+                </div>
+                <div class="col-12 mb-3 mt-5 d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-light" onclick="gridChart()">Применить</button>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- TradingView Widget BEGIN -->
     <div class="tradingview-widget-container">

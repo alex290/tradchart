@@ -1,6 +1,9 @@
 .tradingview-widget-container {
     width: 100%;
     height: 100vh;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
 }
 
 #chart {
@@ -23,10 +26,13 @@ body {
     background-color: rgba(0, 0, 0, 0.712);
     z-index: -1;
     opacity: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
 }
 
 .bgmenu-page.show {
-    z-index: 2;
+    z-index: 5;
     opacity: 1;
 }
 
@@ -34,4 +40,18 @@ body {
     position: absolute;
     right: 5px;
     top: 5px;
+}
+
+.open_menu {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    z-index: 3;
+    padding: 0 5px 5px 5px !important;
+}
+
+.open_menu svg {
+    fill: #fff;
+    width: 15px;
+    height: 15px;
 }
