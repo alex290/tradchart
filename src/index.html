@@ -4,35 +4,23 @@
 <head>
     <meta charset="utf-8">
     <title>TradingView</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="bgmenu-page">
+        <button type="button" class="btn-close-white btn-close" onclick="closeMenu()"></button>
+    </div>
     <!-- TradingView Widget BEGIN -->
     <div class="tradingview-widget-container">
         <div id="chart"></div>
 
     </div>
     <!-- TradingView Widget END -->
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-
-    <script type="text/javascript">
-        new TradingView.widget({
-            "autosize": true,
-            "symbol": "BINANCE:BTCUSDT",
-            "interval": "60",
-            "timezone": "Etc/UTC",
-            "theme": "dark",
-            "style": "1",
-            "locale": "ru",
-            "toolbar_bg": "#f1f3f6",
-            "enable_publishing": false,
-            "hide_legend": true,
-            "hide_side_toolbar": false,
-            "allow_symbol_change": true,
-            "container_id": "chart"
-        });
-    </script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
