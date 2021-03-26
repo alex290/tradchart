@@ -17,39 +17,41 @@
             </path>
         </svg></button>
     <button type="button" class="btn-close-white btn-close" onclick="closeMenu()"></button>
-    <div class="bgmenu-page">
+    <div class="bgmenu-page" style="overflow: auto;">
         <button type="button" class="btn-close-white btn-close" onclick="closeMenu()"></button>
-        <div class="container">
-            <div class="row">
-                <div class="col-8">
-                    <div class="row">
-                        <div class="col-6 mb-3">
-                            <label for="widthColl" class="form-label text-white">Количество по ширине</label>
-                            <input type="number" min=1 class="form-control" id="widthColl" aria-describedby="emailHelp" value="1">
-                        </div>
-                        <div class="col-6 mb-3">
-                            <label for="heightColl" class="form-label text-white">Количество по высоте</label>
-                            <input type="number" min=1 class="form-control" id="heightColl" aria-describedby="emailHelp" value="1">
-                        </div>
-                        <div class="col-6 mb-3">
-                            <label for="theme" class="form-label text-white">Цвет графика</label>
-                            <select class="form-select" aria-label="Default select example" id="theme">
+        <div class="w-100 float-start">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-6 mb-3">
+                                <label for="widthColl" class="form-label text-white">Количество по ширине</label>
+                                <input type="number" min=1 class="form-control" id="widthColl" aria-describedby="emailHelp" value="1">
+                            </div>
+                            <div class="col-6 mb-3">
+                                <label for="heightColl" class="form-label text-white">Количество по высоте</label>
+                                <input type="number" min=1 class="form-control" id="heightColl" aria-describedby="emailHelp" value="1">
+                            </div>
+                            <div class="col-6 mb-3">
+                                <label for="theme" class="form-label text-white">Цвет графика</label>
+                                <select class="form-select" aria-label="Default select example" id="theme">
                                 <option value="dark">Темная</option>
                                 <option value="light">Светлая</option>
                             </select>
+                            </div>
+                            <div class="col-12 mb-3 mt-5 d-flex justify-content-center">
+                                <button type="button" class="btn btn-outline-light" onclick="gridChart()">Применить</button>
+                            </div>
                         </div>
-                        <div class="col-12 mb-3 mt-5 d-flex justify-content-center">
-                            <button type="button" class="btn btn-outline-light" onclick="gridChart()">Применить</button>
-                        </div>
-                    </div>
-                    <hr style="border-color: #fff;">
-                    <div class="row">
-                        <div class="col-12 mb-3">
-                            <label for="listChart" class="form-label text-white">Список инструментов</label>
-                            <textarea name="" class="form-control" rows="10" id="listChart"></textarea>
-                        </div>
-                        <div class="col-12 mb-3 mt-5 d-flex justify-content-center">
-                            <button type="button" class="btn btn-outline-light" onclick="saveSess()">Запомнить</button>
+                        <hr style="border-color: #fff;">
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <label for="listChart" class="form-label text-white">Список инструментов</label>
+                                <textarea name="" class="form-control" rows="10" id="listChart"></textarea>
+                            </div>
+                            <div class="col-12 mb-3 mt-5 d-flex justify-content-center">
+                                <button type="button" class="btn btn-outline-light" onclick="saveSess()">Запомнить</button>
+                            </div>
                         </div>
                     </div>
                 </div>
