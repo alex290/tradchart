@@ -1,6 +1,7 @@
 var listChartText = document.getElementById("listChart");
 
-var listChartSess = sessionStorage.getItem('listChartSess');
+var listChartSess = localStorage.getItem('listChartSess');
+
 
 if (listChartSess == null) {
     new TradingView.widget({
@@ -46,7 +47,7 @@ if (listChartSess == null) {
 function openMenu() {
     let bgmenuPage = document.querySelector('.bgmenu-page');
     if (listChartSess != null) {
-        listChartText.value = listChartSess;
+        listChartText.value = localStorage.getItem('listChartSess');
     }
 
     bgmenuPage.classList.add("show");

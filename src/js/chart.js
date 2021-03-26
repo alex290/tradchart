@@ -1,6 +1,6 @@
 function saveSess() {
     // console.log(listChartText.value);
-    sessionStorage.setItem("listChartSess", listChartText.value);
+    localStorage.setItem("listChartSess", listChartText.value);
 
     if (listChartText.value == null) {
         new TradingView.widget({
