@@ -107,7 +107,7 @@ function gridChart() {
                 "symbol": arrList[index - 1],
                 "interval": "60",
                 "timezone": "Etc/UTC",
-                "theme": "dark",
+                "theme": theme,
                 "style": "1",
                 "locale": "ru",
                 "toolbar_bg": "#f1f3f6",
